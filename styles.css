@@ -1,0 +1,259 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+.headerbody {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    background-color: rgb(57, 82, 119);
+    opacity: 0.9;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem;
+    color: white;
+    width: 100%;
+}
+
+#headerlist {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    text-shadow: 0 0 0.3rem #fff;
+}
+
+.headerlinks {
+    margin-right: 2rem;
+}
+
+.headerlogo {
+  display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#logotext {
+  text-shadow: 0 0 0.3rem #fff;
+}
+
+#logo {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.layer2 {
+  display: flex;
+  background-image: url(lyr1image.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 62rem;
+}
+
+.mainbody {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(0 0 0 / 0.6);
+    color: white;
+    width: 70%;
+    height: 60%;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.mainimg {
+  display: flex;
+  justify-content: center;
+  height: 70%;
+}
+
+.maininfo {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 50%;
+  text-shadow: 0 0 0.3rem #fff;
+}
+
+.minfotitle {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.minfobutton {
+  margin-top: 2rem;
+  border-radius: 0.7rem;
+  border-style: solid;
+  background-color:rgb(196, 151, 94); 
+  border-color: rgb(255, 255, 255);
+  color: white;
+  padding: 0.5rem;
+  box-shadow: 0 0 1rem #fff;
+}
+
+.minfobutton:hover {
+  opacity: 0.8;
+}
+
+.layer3 {
+  background-color: rgb(66, 85, 114);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  padding: 2rem 0 2rem 0;
+}
+
+.layer3header {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 0.3rem #000000;
+}
+
+.earthhousecontainer {
+  display: flex;
+  justify-content: center;
+}
+
+#charimages {
+  width: 14rem;
+  height: 18rem;
+  object-fit: cover;
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem white;
+}
+
+#charcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+  align-items: center;
+}
+
+.charimage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.charcaption {
+  color: white;
+  text-shadow: 0 0 0.3rem #000000;
+  width: 70%;
+}
+
+.layer4 {
+  font-family: sans-serif;
+  display: flex;
+  background-color: blue;
+  justify-content: center;
+  color: white;
+  background-image: url(quotebg.jpg);
+  background-size: cover;
+  padding: 10rem 0 10rem 0;
+  background-position: center;
+
+}
+.lyr4quote {
+  font-size: 2rem;
+  text-shadow: 0 0 0.3rem black;
+}
+
+.lyr4name {
+  font-size: 1.3rem;
+  text-align: end;
+  text-shadow: 0 0 0.3rem black;
+}
+
+.layer5 {
+  display: flex;
+  background-color: rgb(66, 85, 114);
+  padding: 2rem 0 2rem 0;
+  justify-content: center;
+}
+
+.advertbody {
+  display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(0 0 0 / 0.3);
+    padding: 3rem 2rem 3rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 0 0 0.3rem white;
+    
+}
+
+.adbutton button {
+  border-radius: 0.7rem;
+  border-style: solid;
+  background-color:rgb(196, 151, 94); 
+  border-color: rgb(255, 255, 255);
+  color: white;
+  padding: 0.5rem;
+  box-shadow: 0 0 1rem #fff;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(66, 85, 114);
+  box-shadow: 0 0 1rem black;
+  color: white;
+  text-shadow: 0 0 0.3rem black;
+}
