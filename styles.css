@@ -80,6 +80,11 @@
     gap: 0.5rem;
 }
 
+#volume {
+  display: flex;
+  width: 10%;
+}
+
 #logotext {
   text-shadow: 0 0 0.3rem #fff;
 }
