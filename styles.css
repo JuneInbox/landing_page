@@ -100,6 +100,7 @@
 }
 
 .mainbody {
+  overflow: hidden;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -109,6 +110,32 @@
     height: 60%;
     padding: 2rem;
     border-radius: 2rem;
+    margin-top: 5rem;
+}
+
+@media (max-width: 1280px) {
+  .layer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .mainimg {
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    width: 60%;
+  }
 }
 
 .mainimg {
@@ -118,8 +145,9 @@
 }
 
 .maininfo {
+  flex-wrap: wrap;
   font-family: sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: center;
   width: 50%;
   text-shadow: 0 0 0.3rem #fff;
